@@ -5,7 +5,7 @@ environments:
 phases:
   install:
     runtime-versions:
-      docker: 19
+      docker: 18
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
