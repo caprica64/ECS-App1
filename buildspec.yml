@@ -31,7 +31,7 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
-      ### Next line define container image name i.e. "nginx", "app1"
+      ### Next line define container image name i.e. "nginx", "app1" - possible we could use an environment variable here
       - printf "[{\"name\":\"container-app1\",\"imageUri\":\"%s\"}]" $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json
 artifacts:
