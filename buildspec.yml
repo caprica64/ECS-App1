@@ -1,15 +1,16 @@
 version: 0.2
 
-# Added proxy statement
-proxy:
-  upload-artifacts: yes
-  logs: yes
+# Added proxy statement for build image
+#proxy:
+#  upload-artifacts: yes
+#  logs: yes
 
-env:
-  variables:
-    http_proxy: "http://10.1.1.102"
-    https_proxy: "https://10.1.1.102"
-    no_proxy: "169.254.169.254,169.254.170.2,localhost,127.0.0.1"
+# Proxy seetting placeholder for the build environment.
+#env:
+#  variables:
+#    http_proxy: "http://10.1.1.102"
+#    https_proxy: "https://10.1.1.102"
+#    no_proxy: "169.254.169.254,169.254.170.2,localhost,127.0.0.1"
 
 phases:
   install:
